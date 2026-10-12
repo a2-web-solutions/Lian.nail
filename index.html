@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="名古屋市熱田区のネイルサロン Lian.nail。ジェルネイル、スカルプ、フットネイルなど、多彩なネイルメニューをご用意。">
+  <title>Lian.nail | Nail Salon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <a href="#home" class="brand">Lian<span>.nail</span></a>
+
+  <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="#concept">CONCEPT</a>
+    <a href="#design">DESIGN</a>
+    <a href="#menu">MENU</a>
+    <a href="#access">ACCESS</a>
+    <a href="#reserve" class="nav-reserve">RESERVATION</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">NAIL SALON · NAGOYA</p>
+    <img src="images/logo.png" alt="Lian.nail" class="hero-logo">
+    <h1>指先から、<br>私らしく輝く。</h1>
+    <p class="hero-description">
+      あなたらしい美しさを、指先に。<br>
+      日常を彩るネイルデザインを<br>
+      Lian.nailで。
+    </p>
+    <a href="#design" class="btn btn-dark">EXPLORE DESIGNS <span>↗</span></a>
+    <span class="hero-side">BEAUTY IN EVERY DETAIL</span>
+  </div>
+
+  <div class="hero-visual">
+    <img src="images/nail1.png" alt="Lian.nail ネイルデザイン" class="hero-photo">
+    <span class="hero-visual-caption">THE ART OF NAIL BEAUTY</span>
+  </div>
+</section>
+
+<!-- CONCEPT -->
+<section class="section concept" id="concept">
+  <div class="section-heading">
+    <span class="eyebrow">01 / OUR PHILOSOPHY</span>
+    <h2 class="en-heading">Beauty is<br><em>in the details.</em></h2>
+  </div>
+  <div class="concept-text">
+    <h3>何気ない毎日を、<br>少し特別に。</h3>
+    <p>
+      指先を見た瞬間、心が弾む。<br>
+      そんな小さな幸せを大切に。<br><br>
+      シンプルなワンカラーから華やかなアートまで、
+      お好みに合わせてネイルを楽しんでいただけます。
+    </p>
+    <div class="concept-line"></div>
+    <span class="concept-sign">Lian.nail</span>
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="section design-section" id="design">
+  <div class="section-top">
+    <div>
+      <span class="eyebrow">02 / NAIL COLLECTION</span>
+      <h2 class="en-heading">Our <em>Designs.</em></h2>
+    </div>
+    <p>指先に、自分だけのときめきを。</p>
+  </div>
+
+  <div class="design-grid">
+    <article class="design-card">
+      <div class="design-image">
+        <img src="images/nail1.png" alt="エレガントネイル" loading="lazy">
+      </div>
+      <div class="design-info">
+        <span>01 / NAIL DESIGN</span>
+        <h3>Elegant &amp; Luxury</h3>
+      </div>
+    </article>
+
+    <article class="design-card">
+      <div class="design-image">
+        <img src="images/nail2.png" alt="デザインネイル" loading="lazy">
+      </div>
+      <div class="design-info">
+        <span>02 / NAIL DESIGN</span>
+        <h3>Art &amp; Creativity</h3>
+      </div>
+    </article>
+
+    <article class="design-card">
+      <div class="design-image">
+        <img src="images/nail3.png" alt="クリスタルネイル" loading="lazy">
+      </div>
+      <div class="design-info">
+        <span>03 / NAIL DESIGN</span>
+        <h3>Crystal &amp; Shine</h3>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="section-top">
+    <div>
+      <span class="eyebrow">03 / PRICE LIST</span>
+      <h2 class="en-heading">Our <em>Menu.</em></h2>
+    </div>
+    <p>ご希望に合わせたメニューをご用意。</p>
+  </div>
+
+  <div class="menu-tabs" role="tablist" aria-label="メニューカテゴリー">
+    <button class="menu-tab active" data-category="gel" role="tab" aria-selected="true">GEL</button>
+    <button class="menu-tab" data-category="scalp" role="tab" aria-selected="false">SCULPTURE</button>
+    <button class="menu-tab" data-category="foot" role="tab" aria-selected="false">FOOT</button>
+    <button class="menu-tab" data-category="care" role="tab" aria-selected="false">CARE &amp; OTHER</button>
+  </div>
+
+  <div id="menu-content" class="menu-content" aria-live="polite"></div>
+
+  <p class="menu-note">
+    ※掲載料金はご提供いただいたメニュー情報をもとにしています。<br>
+    ※施術内容や追加オプションによって料金が異なる場合があります。最新情報は予約ページでご確認ください。
+  </p>
+
+  <div class="menu-cta">
+    <p>Find your favorite nail design.</p>
+    <a href="https://beauty.hotpepper.jp/kr/slnH000709811/" target="_blank" rel="noopener noreferrer" class="text-link">
+      VIEW ALL MENUS &amp; BOOKING ↗
+    </a>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="section access-section" id="access">
+  <div class="section-top">
+    <div>
+      <span class="eyebrow">04 / SALON INFORMATION</span>
+      <h2 class="en-heading">Visit <em>Us.</em></h2>
+    </div>
+  </div>
+
+  <div class="access-layout">
+    <div class="access-info">
+      <h3>Lian.nail</h3>
+      <p class="access-sub">NAIL SALON</p>
+
+      <dl>
+        <div>
+          <dt>ADDRESS</dt>
+          <dd>〒456-0051<br>愛知県名古屋市熱田区四番2丁目1-21<br>後藤ビル北館3F西</dd>
+        </div>
+        <div>
+          <dt>OPEN</dt>
+          <dd>10:00 - 21:00</dd>
+        </div>
+        <div>
+          <dt>CLOSED</dt>
+          <dd>年末年始（12/28 - 1/4）</dd>
+        </div>
+        <div>
+          <dt>TEL</dt>
+          <dd><a href="tel:08078544911">080-7854-4911</a></dd>
+        </div>
+      </dl>
+
+      <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%86%B1%E7%94%B0%E5%8C%BA%E5%9B%9B%E7%95%AA2%E4%B8%81%E7%9B%AE1-21" target="_blank" rel="noopener noreferrer">
+        OPEN GOOGLE MAPS ↗
+      </a>
+    </div>
+
+    <div class="access-map">
+      <iframe
+        title="Lian.nail 周辺地図"
+        src="https://maps.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%86%B1%E7%94%B0%E5%8C%BA%E5%9B%9B%E7%95%AA2%E4%B8%81%E7%9B%AE1-21&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reserve-section" id="reserve">
+  <span class="eyebrow">YOUR BEAUTY, YOUR MOMENT</span>
+  <h2>Make your<br><em>moment shine.</em></h2>
+  <p>お気に入りのネイルで、毎日をもっと素敵に。</p>
+  <a href="https://beauty.hotpepper.jp/kr/slnH000709811/" target="_blank" rel="noopener noreferrer" class="btn btn-light">
+    ONLINE RESERVATION <span>↗</span>
+  </a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div>
+    <span class="footer-brand">Lian.nail</span>
+    <p>NAIL SALON · NAGOYA</p>
+  </div>
+  <div class="footer-right">
+    <a href="#home">BACK TO TOP ↑</a>
+    <small>© <span id="year"></span> Lian.nail</small>
+  </div>
+</footer>
+
+</body>
+</html>
